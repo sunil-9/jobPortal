@@ -2,15 +2,48 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <EditText
+    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/et_time"
-        android:hint="enter venue and time"/>
-<Button
-    android:layout_below="@+id/et_time"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="confirm"
-    android:id="@+id/btn_confirm"/>
+        android:background="@color/colorPrimaryDark"
+        app:titleTextColor="@color/colorPrimary"
+        style="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/menuStyle"
+        android:id="@+id/toolbar">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="Confirm"/>
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_time"
+            android:lines="3"
+            android:hint="enter venue and time"/>
+
+
+        <Button
+            android:layout_below="@+id/et_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="confirm"
+            android:id="@+id/btn_confirm"/>
+    </LinearLayout>
+
 </RelativeLayout>

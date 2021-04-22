@@ -15,6 +15,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,6 +23,7 @@ import com.example.android.jobprovider.R;
 import com.example.android.jobprovider.fragments.seeker.UserHomeFragment;
 import com.example.android.jobprovider.fragments.seeker.UserJobFragment;
 import com.example.android.jobprovider.fragments.seeker.UserSettingFragment;
+import com.example.android.jobprovider.utils.PrefManager;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -35,6 +37,7 @@ public class SeekerDashboardActivity extends AppCompatActivity implements Naviga
     private NavigationView navigationView;
     TextView UserNameView;
     // drawer end
+    PrefManager prefManager;
 
     private FirebaseAuth mAuth;
     private String user_id;
@@ -48,10 +51,14 @@ public class SeekerDashboardActivity extends AppCompatActivity implements Naviga
         setSupportActionBar(toolbars);
         mAuth = FirebaseAuth.getInstance();
         user_id =mAuth.getUid();
+        prefManager =new PrefManager(this);
 
         //for drawer instance are created
         drawerLayout=findViewById(R.id.drawer_layout);
         navigationView=findViewById(R.id.nav_view);
+        View headerView = navigationView.getHeaderView(0);
+        TextView navUsername = (TextView) headerView.findViewById(R.id.UserNameView);
+        navUsername.setText(prefManager.getemail());
         toggle=new ActionBarDrawerToggle(this, drawerLayout, R.string.start, R.string.close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
@@ -71,9 +78,6 @@ public class SeekerDashboardActivity extends AppCompatActivity implements Naviga
         //this is for bottom navigation
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fragment_container, new UserHomeFragment()).commit();
-
-
-
 
         //instance of bottomNavigation
         BottomNavigationView btnNav = findViewById(R.id.bottom_navigation);
@@ -112,6 +116,7 @@ public class SeekerDashboardActivity extends AppCompatActivity implements Naviga
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if(toggle.onOptionsItemSelected(item)){
+
             return true;
         }
         return  true;
@@ -136,7 +141,8 @@ public class SeekerDashboardActivity extends AppCompatActivity implements Naviga
                 break;
 
             case R.id.AboutUs_draw:
-                Toast.makeText(this,"About us selected",Toast.LENGTH_LONG).show();
+                startActivity(new Intent(this,AboutUsActivity.class));
+//                Toast.makeText(this,"About us selected",Toast.LENGTH_LONG).show();
                 break;
             case R.id.changepass_draw:
                 startActivity(new Intent(SeekerDashboardActivity.this, ChangePasswordActivity.class));
@@ -144,8 +150,8 @@ public class SeekerDashboardActivity extends AppCompatActivity implements Naviga
             case R.id.logout_draw:
                 new AlertDialog.Builder(this)
                         .setIcon(android.R.drawable.ic_dialog_alert)
-                        .setTitle("Closing Activity")
-                        .setMessage("Are you sure you want to close this activity?")
+                        .setTitle("Logout")
+                        .setMessage("Are you sure you want to Logout?")
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener()
                         {
                             @Override

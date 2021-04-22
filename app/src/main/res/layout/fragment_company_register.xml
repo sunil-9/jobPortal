@@ -150,7 +150,6 @@
             android:layout_gravity="center"
             android:indeterminateTint="@color/colorPrimaryDark"
             tools:targetApi="LOLLIPOP"
-
             android:visibility="gone"/>
         <FrameLayout
             android:layout_width="match_parent"

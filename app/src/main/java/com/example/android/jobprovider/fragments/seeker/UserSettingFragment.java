@@ -55,7 +55,6 @@ public class UserSettingFragment extends Fragment {
        recyclerView = view.findViewById(R.id.recycleView);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);
-
         FirebaseRecyclerOptions<JobAcceptedModel> options
                 = new FirebaseRecyclerOptions.Builder<JobAcceptedModel>()
                 .setQuery(query, JobAcceptedModel.class)

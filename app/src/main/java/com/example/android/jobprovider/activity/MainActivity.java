@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.android.jobprovider.R;
 import com.example.android.jobprovider.utils.Constants;
+import com.example.android.jobprovider.utils.PrefManager;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -83,6 +84,9 @@ public class MainActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
                     String udi = firebaseAuth.getUid();
+                    PrefManager prefManager =new PrefManager(MainActivity.this);
+                    prefManager.setemail(txt_email);
+
                     DatabaseReference rootRef = FirebaseDatabase.getInstance(Constants.DATABASE_URL).getReference();
                     DatabaseReference userNameRef = rootRef.child("provider").child(udi);
                     ValueEventListener eventListener = new ValueEventListener() {

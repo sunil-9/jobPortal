@@ -7,5 +7,7 @@ public class Constants {
     public static String JOB_APPLIED_DETAILS = "jobAppliedDetails";
     public static String JOB_AVAILABLE = "JobAvailable";
     public static String JOB_ACCEPTED = "JobAccepted";
+    public static String EMAIL = "email";
+    public static String USERNAME = "username";
 
 }

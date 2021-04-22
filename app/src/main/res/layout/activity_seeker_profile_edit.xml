@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".activity.SeekerProfileEditActivity">
 
     <LinearLayout
@@ -30,7 +31,8 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -47,10 +49,16 @@
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark" />
+
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
                     android:hint="Name"
                     android:inputType="text"
                     android:textColorHighlight="#fff"
@@ -64,6 +72,11 @@
                     android:text="@string/gender"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark" />
 
                 <RadioGroup
                     android:id="@+id/rg_sex"
@@ -105,9 +118,15 @@
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
                     android:orientation="horizontal">
 
                     <com.google.android.material.textview.MaterialTextView
@@ -141,10 +160,16 @@
                     android:textColor="@color/black"
                     android:textSize="25sp" />
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark" />
+
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_city"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
                     android:hint="@string/your_location_here"
                     android:textSize="25sp" />
 
@@ -158,10 +183,16 @@
                     android:textColor="@color/black"
                     android:textSize="25sp" />
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark" />
+
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
                     android:hint="@string/email"
                     android:textSize="25sp" />
 
@@ -176,10 +207,16 @@
                     android:textColor="@color/black"
                     android:textSize="25sp" />
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark" />
+
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_phone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
                     android:hint="@string/your_location_here"
                     android:inputType="number"
                     android:textSize="25sp" />
@@ -195,11 +232,16 @@
                     android:textColor="@color/black"
                     android:textSize="25sp" />
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark" />
+
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_skills"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
+                    android:layout_margin="10dp"
                     android:gravity="top|left"
                     android:hint="Skills"
                     android:inputType="textMultiLine"
@@ -219,12 +261,16 @@
                     android:text="Achievements"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark" />
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_achievement"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
+android:layout_margin="10dp"
                     android:gravity="top|left"
                     android:hint="Achievements"
                     android:inputType="textMultiLine"
@@ -244,12 +290,16 @@
                     android:text="Certifications"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark" />
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_certification"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
+android:layout_margin="10dp"
                     android:gravity="top|left"
                     android:hint="Certifications"
                     android:inputType="textMultiLine"
@@ -266,11 +316,15 @@
                     android:text="Work Experience"
                     android:textColor="#050505"
                     android:textSize="20dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark" />
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_experience"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
+android:layout_margin="10dp"
                     android:gravity="top|left"
                     android:hint="Your Experience"
                     android:inputType="textMultiLine"

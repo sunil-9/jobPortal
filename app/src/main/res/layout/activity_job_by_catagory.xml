@@ -5,29 +5,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.JobByCatagoryActivity">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="10dp"
+
         >
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/text_view"
+            android:background="@color/colorPrimaryDark"
             android:text="Available Jobs"
             android:textSize="30sp"
             android:gravity="center"
             android:textColor="@color/black"
             />
-
-        <androidx.recyclerview.widget.RecyclerView
+        <RelativeLayout
             android:layout_below="@+id/text_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
-            android:orientation="vertical"
-            android:id="@+id/recycleView">
-        </androidx.recyclerview.widget.RecyclerView>
+            android:layout_margin="10dp"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:id="@+id/recycleView">
+            </androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+
+
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

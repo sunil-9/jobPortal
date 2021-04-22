@@ -3,6 +3,7 @@ package com.example.android.jobprovider.activity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -19,6 +20,8 @@ public class SplashActivity extends AppCompatActivity {
 
 
         mProgress = (ProgressBar) findViewById(R.id.splash_screen_progress_bar);
+        mProgress.getProgressDrawable().setColorFilter(
+                Color.WHITE, android.graphics.PorterDuff.Mode.SRC_IN);
 
         // Start lengthy operation in a background thread
         new Thread(new Runnable() {

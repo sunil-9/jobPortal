@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/job_seeker"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.JobAcceptActivity"></activity>
+        <activity android:name=".activity.UpdateProviderProfileActivity"></activity>
+        <activity android:name=".activity.AboutUsActivity" />
+        <activity android:name=".activity.PolicyActivity" />
+        <activity android:name=".activity.JobAcceptActivity" />
         <activity android:name=".activity.JobByCatagoryActivity" />
         <activity android:name=".activity.ChangePasswordActivity" />
         <activity android:name=".activity.SeekerProfileActivity" />
