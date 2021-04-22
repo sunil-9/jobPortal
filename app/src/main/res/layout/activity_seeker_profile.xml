@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SeekerProfileActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/headerText"
+                android:layout_marginBottom="20dp"
+                android:text="Account Info" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="155dp"
+             android:layout_centerInParent="true"
+             android:layout_height="155dp"
+             app:cardCornerRadius="250dp"
+             app:cardBackgroundColor="@color/colorPrimary">
+
+             <androidx.cardview.widget.CardView
+                 android:layout_width="150dp"
+                 android:layout_height="150dp"
+                 app:cardCornerRadius="250dp"
+                 android:layout_gravity="center">
+
+                 <ImageView
+                     android:id="@+id/can_image"
+                     android:layout_width="150dp"
+                     android:layout_height="150dp"
+                     android:layout_gravity="center"
+                     android:src="@drawable/businessman"
+                     android:scaleType="centerCrop"/>
+             </androidx.cardview.widget.CardView>
+
+         </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+
+                <ImageView
+                    android:id="@+id/nameImageView"
+                    style="@style/profileDetailsImage"
+                    android:src="@drawable/ic_name" />
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toRightOf="@id/nameImageView"
+                    android:text="Name" />
+
+                <TextView
+                    android:id="@+id/can_name"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toRightOf="@id/nameImageView"
+                    android:text="developer" />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsView" />
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+
+                <ImageView
+                    android:id="@+id/mobileImageView"
+                    style="@style/profileDetailsImage"
+                    android:src="@drawable/ic_mobile" />
+
+                <TextView
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toRightOf="@id/mobileImageView"
+                    android:text="Mobile" />
+
+                <TextView
+                    android:id="@+id/can_phone"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toRightOf="@id/mobileImageView"
+                    android:text="+91-8129999999" />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsView" />
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+
+                <ImageView
+                    android:id="@+id/emailImageView"
+                    style="@style/profileDetailsImage"
+                    android:src="@drawable/ic_email" />
+
+                <TextView
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toRightOf="@id/emailImageView"
+                    android:text="Email" />
+
+                <TextView
+                    android:id="@+id/can_email"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toRightOf="@id/emailImageView"
+                    android:text="developer@gmail.com" />
+
+            </RelativeLayout>
+            <View style="@style/proifleDetailsView" />
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <ImageView
+                    android:id="@+id/dobImageView"
+                    android:src="@drawable/ic_dob"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:text="D.O.B"
+                    android:layout_toRightOf="@id/dobImageView"
+                    style="@style/profileDetailsTextMain" />
+
+                <TextView
+                    android:id="@+id/can_dob"
+                    android:text="12-05-1990"
+                    android:layout_toRightOf="@id/dobImageView"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+            <View style="@style/proifleDetailsView" />
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+
+                <ImageView
+                    android:id="@+id/addressImageView"
+                    style="@style/profileDetailsImage"
+                    android:src="@drawable/ic_address" />
+
+                <TextView
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toRightOf="@id/addressImageView"
+                    android:text="Address" />
+
+                <TextView
+                    android:id="@+id/can_location"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toRightOf="@id/addressImageView"
+                    android:text="Avenue 2nd Street NW SY." />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsView" />
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+
+                <ImageView
+                    android:id="@+id/achImageview"
+                    style="@style/profileDetailsImage"
+                    android:src="@drawable/ic_dob" />
+
+                <TextView
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toRightOf="@id/achImageview"
+                    android:text="Achievements" />
+
+                <TextView
+                    android:id="@+id/can_achievements"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toRightOf="@id/achImageview"
+                    android:text="achievements here" />
+            </RelativeLayout>
+            <View style="@style/proifleDetailsView" />
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+
+                <ImageView
+                    android:id="@+id/expTextView"
+                    style="@style/profileDetailsImage"
+                    android:src="@drawable/ic_dob" />
+
+                <TextView
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toRightOf="@id/expTextView"
+                    android:text="@string/experience" />
+
+                <TextView
+                    android:id="@+id/can_exp"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toRightOf="@id/expTextView"
+                    android:text="Qualification here" />
+            </RelativeLayout>
+            <RelativeLayout style="@style/profileDetailsLayout">
+
+                <ImageView
+                    android:id="@+id/certImageview"
+                    style="@style/profileDetailsImage"
+                    android:src="@drawable/ic_dob" />
+
+                <TextView
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toRightOf="@id/certImageview"
+                    android:text="Certfications" />
+
+                <TextView
+                    android:id="@+id/can_certifications"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toRightOf="@id/certImageview"
+                    android:text="certfications here" />
+
+            </RelativeLayout>
+            <RelativeLayout style="@style/profileDetailsLayout">
+
+                <ImageView
+                    android:id="@+id/skillsImageview"
+                    style="@style/profileDetailsImage"
+                    android:src="@drawable/ic_dob" />
+
+                <TextView
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toRightOf="@id/skillsImageview"
+                    android:text="Skills" />
+
+                <TextView
+                    android:id="@+id/can_skills"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toRightOf="@id/skillsImageview"
+                    android:text="Skills here" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                >
+                <Button
+                    android:id="@+id/edit_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Profile"
+                    android:textSize="20dp"
+                    android:background="@drawable/red_button_bg"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                >
+                <Button
+                    android:id="@+id/invite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Profile"
+                    android:textSize="20dp"
+                    android:background="@drawable/red_button_bg"
+                    />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsView" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

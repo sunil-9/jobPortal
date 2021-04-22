@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.provider.CompanyRegisterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@android:color/darker_gray"
+            android:background="@drawable/white_border"
+            tools:targetApi="p">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                app:met_floatingLabel="normal"
+                android:hint="Company's Name"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/colorPrimaryDark"
+                app:met_baseColor="@color/colorPrimaryDark"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:inputType="textPersonName"
+                app:met_textColor="@color/colorPrimaryDark"/>
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@android:color/darker_gray"
+            android:background="@drawable/white_border"
+            tools:targetApi="p">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                app:met_floatingLabel="normal"
+                android:hint="Email Address"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/colorPrimaryDark"
+                app:met_baseColor="@color/colorPrimaryDark"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:inputType="textEmailAddress"
+                app:met_textColor="@color/colorPrimaryDark"/>
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@android:color/darker_gray"
+            android:background="@drawable/white_border"
+            tools:targetApi="p">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                app:met_floatingLabel="normal"
+                android:hint="Password"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/colorPrimaryDark"
+                app:met_baseColor="@color/colorPrimaryDark"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:inputType="textPassword"
+                app:met_textColor="@color/colorPrimaryDark"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@android:color/darker_gray"
+            android:background="@drawable/white_border"
+            tools:targetApi="p">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                app:met_floatingLabel="normal"
+                android:hint="Company Contact number"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/colorPrimaryDark"
+                app:met_baseColor="@color/colorPrimaryDark"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:inputType="phone"
+                app:met_textColor="@color/colorPrimaryDark"/>
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@android:color/darker_gray"
+            android:background="@drawable/white_border"
+            tools:targetApi="p">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                app:met_floatingLabel="normal"
+                android:hint="Company location"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/colorPrimaryDark"
+                app:met_baseColor="@color/colorPrimaryDark"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:inputType="text"
+                app:met_textColor="@color/colorPrimaryDark"/>
+
+        </FrameLayout>
+
+        <ProgressBar
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/progressBar"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/colorPrimaryDark"
+            tools:targetApi="LOLLIPOP"
+
+            android:visibility="gone"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@android:color/darker_gray"
+            android:background="@drawable/orange_border"
+            tools:targetApi="p">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Register"
+                android:textAllCaps="true"
+                android:id="@+id/register"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:background="?attr/selectableItemBackground"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

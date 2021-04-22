@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"
+        />
+
+    <item android:id="@+id/jobsFragment"
+        android:title="Jobs"
+        android:icon="@drawable/ic_baseline_work_24"
+        />
+
+    <item android:id="@+id/acceptedJob"
+        android:title="Accepted Job"
+        android:icon="@drawable/ic_person"
+        />
+</menu>

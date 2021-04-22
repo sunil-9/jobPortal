@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.jobprovider">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/job_seeker"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/job_seeker"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.JobAcceptActivity"></activity>
+        <activity android:name=".activity.JobByCatagoryActivity" />
+        <activity android:name=".activity.ChangePasswordActivity" />
+        <activity android:name=".activity.SeekerProfileActivity" />
+        <activity android:name=".activity.SeekerProfileEditActivity" />
+        <activity android:name=".activity.ForgetPaswordActivity" />
+        <activity android:name=".activity.SeekerDashboardActivity" />
+        <activity android:name=".activity.UpdateJobActivity" />
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.ProviderHome" />
+        <activity android:name=".activity.MainActivity" />
+    </application>
+
+</manifest>

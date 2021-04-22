@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home_draw"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home" />
+        <item
+            android:id="@+id/userprofile_draw"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="Profile" />
+
+        <item android:id="@+id/changepass_draw"
+            android:title="Change Password"
+            android:icon="@drawable/ic_baseline_security_24"
+            />
+
+        <item
+            android:id="@+id/AboutUs_draw"
+            android:icon="@drawable/ic_baseline_label_24"
+            android:title="About us" />
+
+        <item
+            android:id="@+id/logout_draw"
+            android:icon="@drawable/ic_baseline_power_settings_new_24"
+            android:title="Log Out" />
+    </group>
+
+
+</menu>
